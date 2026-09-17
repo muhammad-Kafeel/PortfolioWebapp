@@ -1,6 +1,6 @@
 import React from "react";
 import PageHeaderContent from "../../components/pageHeaderContent";
-import {BsInfoCircle, BsTranslate} from 'react-icons/bs'
+import {BsInfoCircle} from 'react-icons/bs'
 import { skillsData } from "./Utils";
 import { Animate , AnimateKeyframes } from "react-simple-animate";
 import {Line} from 'rc-progress'

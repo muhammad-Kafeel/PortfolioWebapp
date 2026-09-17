@@ -52,7 +52,6 @@ const Portfolio = () => {
     function handleHover(index){
 setHoveredValue(index)
     }
-    console.log(filteredValue)
     const filteredItems = filteredValue === 1 ? portfolioDate : portfolioDate.filter(item => item.id === filteredValue)
 
     return (
@@ -84,8 +83,8 @@ setHoveredValue(index)
                                     onMouseLeave={() => handleHover(null)}
                                 >
                                     <div className="portfolio__content__cards__item__img-wrapper">
-                                        <a>
-                                            <img src={item.image} alt="dumy data" />
+                                        <a href={item.link || '#'} target={item.link ? "_blank" : undefined} rel={item.link ? "noopener noreferrer" : undefined}>
+                                            <img src={item.image} alt={item.name} />
                                         </a>
                                     </div>
                                     <div className="overlay">

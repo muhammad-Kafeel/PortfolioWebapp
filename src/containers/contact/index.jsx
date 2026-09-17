@@ -1,6 +1,6 @@
 import React from "react";
 import PageHeaderContent from "../../components/pageHeaderContent";
-import { BsInfoCircle, BsTranslate } from 'react-icons/bs'
+import { BsInfoCircle } from 'react-icons/bs'
 import { Animate } from "react-simple-animate";
 import './styles.scss'
 const Contact = () => {
